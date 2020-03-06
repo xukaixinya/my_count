@@ -1,7 +1,7 @@
 import re
 
 
-class Counter:
+class word_Counter:
     def __init__(self, path):
         self._mapping = dict()
         with open(path) as f:
