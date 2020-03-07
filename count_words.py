@@ -1,10 +1,10 @@
 import re
 
 
-class word_Counter:
-    def __init__(self, path):
+class Word_Counter:
+    def __init__(self, txtpath):
         self._mapping = dict()
-        with open(path) as f:
+        with open(txtpath) as f:
             data = f.read()
             words = [s.lower() for s in re.findall("\w+", data)]
             for word in words:
